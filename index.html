@@ -1,616 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-
-    <title>Breezed HTML Bootstrap Template</title>
-
-<!--
-
-Breezed Template
-
-https://templatemo.com/tm-543-breezed
-
--->
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-
-    <link rel="stylesheet" href="assets/css/templatemo-breezed.css">
-
-    <link rel="stylesheet" href="assets/css/owl-carousel.css">
-
-    <link rel="stylesheet" href="assets/css/lightbox.css">
-
-    </head>
-    
-    <body>
-    
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151613">
+  <meta name="description" content="30人三對三籃球輪換積分賽活動指南：國光中學、六場輪換、賽制、讓分、個人積分、獎金及活動流程。">
+  <title>30人三對三籃球輪換積分賽｜活動指南</title>
+  <style>
+    :root{--ink:#151613;--paper:#f1eee6;--orange:#ff642a;--muted:#a6a79e;--line:#35372f;--white:#fffdf6}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.8}a{color:inherit}button{font:inherit}::selection{background:var(--orange);color:var(--ink)}
+    .skip{position:fixed;top:-80px;left:16px;z-index:10;background:var(--orange);padding:12px}.skip:focus{top:10px}:focus-visible{outline:3px solid var(--orange);outline-offset:5px}
+    .wrap{width:min(1180px,calc(100% - 64px));margin:auto}.topbar{background:var(--ink);color:var(--paper);position:sticky;top:0;z-index:5;border-bottom:1px solid var(--line)}.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{text-decoration:none;display:flex;align-items:center;gap:12px;font-weight:800;white-space:nowrap}.brand-mark{font-family:Impact,"Arial Black",sans-serif;font-size:30px;letter-spacing:-2px;color:var(--orange)}.nav-links{display:flex;gap:26px;font-size:13px;font-weight:700}.nav-links a{text-decoration:none}.nav-links a:hover{color:var(--orange)}
+    .hero{background:var(--ink);color:var(--paper);overflow:hidden;position:relative}.hero-inner{position:relative;display:grid;grid-template-columns:1.15fr 1fr;gap:30px;padding-top:74px;padding-bottom:70px;align-items:center}.eyebrow{font:700 12px/1.5 Consolas,monospace;letter-spacing:2px;display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:25px;height:3px;background:var(--orange)}.hero h1{margin:28px 0 24px;line-height:1.12;font-size:clamp(40px,5.5vw,72px);letter-spacing:-2px;font-weight:900}.hero h1 span{display:block}.hero h1 .accent{color:var(--orange)}.hero-title-number{font-family:Impact,"Arial Black",sans-serif;font-size:1.4em;letter-spacing:-3px}.hero-sub{color:#c2c3b8;font-size:16px;max-width:420px;margin:0 0 30px}.hero-sub strong{color:var(--paper)}.actions{display:flex;flex-wrap:wrap;gap:12px}.button{display:inline-flex;justify-content:center;align-items:center;gap:28px;background:var(--orange);color:var(--ink);padding:13px 22px;text-decoration:none;font-size:14px;font-weight:900;border:1px solid var(--orange);transition:transform .2s}.button:hover{transform:translateY(-3px)}.button.secondary{background:transparent;color:var(--paper);border-color:#5d5e53}.hero-note{margin:20px 0 0;font-size:12px;color:var(--muted)}
+    .court-art{position:relative;aspect-ratio:1;min-width:0}.court-art svg{width:100%;height:100%;display:block}.art-label{position:absolute;top:8%;right:0;font:11px/1.5 Consolas,monospace;color:var(--muted);letter-spacing:2px;writing-mode:vertical-rl}.court-caption{position:absolute;bottom:8%;left:3%;font:700 11px/1.6 Consolas,monospace;letter-spacing:2px;color:#cfcec2}.hero-strip{border-top:1px solid var(--line);padding:21px 0}.strip-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;font:700 11px/1.5 Consolas,monospace;letter-spacing:2px}.strip-inner strong{color:var(--orange)}
+    .event-info{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid #cbc8bc}.info-cell{padding:30px 25px;border-right:1px solid #cbc8bc}.info-cell:first-child{padding-left:0}.info-cell:last-child{border:0}.label{display:block;font-size:11px;font-weight:700;letter-spacing:2px;color:#6f7066}.info-value{font-size:24px;font-weight:900;display:block;margin:5px 0}.info-small{font-size:12px;color:#6f7066}.status{display:inline-block;border:1px solid #a9aa9c;border-radius:2px;font-size:10px;padding:0 6px;vertical-align:middle;margin-left:8px;letter-spacing:1px}
+    section.content{padding:88px 0}.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:38px}.section-kicker{font:700 11px/1.5 Consolas,monospace;letter-spacing:2px;color:#77796c;margin-bottom:10px}.section-kicker b{color:var(--orange);margin-right:10px}.section-head h2{font-size:clamp(28px,3.5vw,42px);line-height:1.3;margin:0;font-weight:900;letter-spacing:-1px}.section-head p{max-width:420px;font-size:14px;margin:0;color:#6b6d61}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.stat{border:1px solid #cccbbf;padding:27px 24px;background:#f7f5ee}.stat-num{font:80px/1.2 Impact,"Arial Black",sans-serif;letter-spacing:-2px}.stat-unit{font-size:14px;font-weight:800;margin-left:10px}.stat h3{font-size:15px;margin:12px 0 5px}.stat p{font-size:12px;color:#707265;margin:0}.rule-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:42px}.rule{border-top:2px solid var(--ink);padding-top:20px}.rule-num{font:12px Consolas,monospace;color:#8b8d7f}.rule h3{font-size:18px;margin:8px 0}.rule p{font-size:14px;color:#626458;margin:0}.notice{border-left:4px solid var(--orange);padding:16px 22px;background:#e8e4d8;font-size:14px;margin-top:32px}.notice strong{display:block;color:var(--ink)}
+    .dark-section{background:var(--ink);color:var(--paper)}.dark-section .section-kicker{color:var(--muted)}.dark-section .section-head p{color:#a9ab9c}.scoring-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:60px}.scoring-title{font-size:22px;margin:0 0 18px}.score-formula{padding:24px 0;border-top:1px solid #55564c;border-bottom:1px solid #55564c;font-size:21px;font-weight:900;line-height:1.8}.score-formula span{color:var(--orange)}.score-desc{color:#b5b6a8;font-size:14px}.scoreboard{background:#22241e;border:1px solid var(--line);margin-top:28px;padding:26px}.board-label{text-align:center;font:11px Consolas,monospace;letter-spacing:2px;color:var(--muted)}.board-row{display:flex;align-items:center;justify-content:center;gap:28px;margin:12px 0}.board-num{font:72px/1.2 Impact,"Arial Black",sans-serif}.board-num.orange{color:var(--orange)}.board-divider{font-size:35px;color:#747669}.board-description{text-align:center;font-size:12px;color:#b7b9aa;margin:0}.outcome{display:flex;justify-content:center;gap:30px;font-size:13px;margin-top:18px;border-top:1px solid var(--line);padding-top:15px}.outcome strong{color:var(--orange)}.handicap{border:1px solid #4d5045;padding:28px}.handicap h3{font-size:22px;margin:0 0 12px}.handicap p{font-size:13px;color:#b5b6a8;margin:0 0 20px}.handicap table{width:100%;border-collapse:collapse;font-size:13px}.handicap th{text-align:left;color:#a9ab9c;font-size:11px;font-weight:500;padding-bottom:12px}.handicap td{border-top:1px solid var(--line);padding:8px 0}.handicap td:last-child{text-align:right;color:var(--orange);font-weight:800}.handicap .small{font-size:12px;margin:18px 0 0}.dark-notice{background:#25271f;color:#c2c4b4}.dark-notice strong{color:var(--paper)}
+    .timeline{display:grid;grid-template-columns:1fr 1fr;gap:0 60px}.timeline-item{display:grid;grid-template-columns:120px 1fr;gap:20px;padding:23px 0;border-top:1px solid #c8c8b9}.timeline-time{font:28px/1.3 Impact,"Arial Black",sans-serif}.timeline-time span{font-family:"Microsoft JhengHei",sans-serif;font-size:10px;display:block;color:#77796b;letter-spacing:1px;margin-top:6px}.timeline-item h3{margin:0 0 6px;font-size:17px}.timeline-item p{font-size:13px;color:#6e7062;margin:0}.timeline-item.game .timeline-time{color:#d74410}.timeline-foot{font-size:13px;color:#6e7062;margin:24px 0 0}
+    .prize-layout{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:start}.pool{border-bottom:1px solid var(--line);padding-bottom:24px}.pool .label{color:var(--muted)}.pool-value{font:clamp(75px,9vw,120px)/1.2 Impact,"Arial Black",sans-serif;letter-spacing:-3px;color:var(--orange)}.pool-value span{font:700 14px "Microsoft JhengHei",sans-serif;letter-spacing:1px;color:var(--paper)}.podium{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}.podium-item{background:#22241e;border:1px solid var(--line);color:var(--paper);padding:20px 14px}.podium-item span{font:11px Consolas,monospace;letter-spacing:1px;color:var(--orange)}.podium-item strong{display:block;font:32px/1.5 Impact,"Arial Black",sans-serif}.podium-item small{font-size:11px;color:#aaa}.prize-note{font-size:12px;margin-top:15px;color:#b5b6a8}.rank-list{list-style:none;padding:0;margin:0}.rank-list li{display:flex;align-items:baseline;gap:18px;padding:15px 0;border-top:1px solid var(--line);font-size:17px;font-weight:800}.rank-list span{font:22px Impact,"Arial Black",sans-serif;color:var(--orange)}.rank-detail{font-size:13px;color:#b5b6a8}.rank-detail p{margin:16px 0}.rank-detail strong{font-weight:900;color:var(--paper)}
+    .faq{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px}.faq-intro h2{font-size:36px;line-height:1.35;margin:0 0 18px}.faq-intro p{font-size:14px;color:#707264}.faq-list details{border-top:1px solid #c4c6b7;padding:19px 0}.faq-list details:last-child{border-bottom:1px solid #c4c6b7}.faq-list summary{cursor:pointer;font-size:16px;font-weight:800;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px}.faq-list summary::-webkit-details-marker{display:none}.faq-list summary:after{content:"+";font-size:23px;font-weight:400}.faq-list details[open] summary:after{content:"−"}.faq-list p,.faq-list ul{color:#646758;font-size:14px;margin:14px 0 0}.faq-list ul{padding-left:22px}.contact{background:var(--ink);color:var(--paper);padding:58px 0}.contact-inner{display:flex;justify-content:space-between;align-items:center;gap:30px}.contact h2{font-size:28px;margin:0 0 7px}.contact p{color:#aeb1a0;font-size:14px;margin:0}.contact-name{display:block;font-size:clamp(22px,3vw,36px);font-weight:900;color:var(--orange);text-decoration:none}.footer{background:var(--ink);color:#8c9080;font:11px/1.6 Consolas,monospace;letter-spacing:1px;padding:20px 0 26px;border-top:1px solid var(--line)}.footer-inner{display:flex;justify-content:space-between;gap:20px}.back-top{text-decoration:none;color:#c0c3b2}.checklist{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.checklist span{border:1px solid #c6c8b8;padding:7px 13px;font-size:12px}.checklist span:before{content:"✓";color:#c74415;margin-right:8px}
+    @media(max-width:900px){.wrap{width:calc(100% - 40px)}.nav-links{gap:15px}.hero-inner{padding-top:50px;gap:0}.hero h1{font-size:52px}.court-art{align-self:center}.stats{grid-template-columns:repeat(2,1fr)}.rule-grid{gap:20px}.scoring-layout{gap:30px}.timeline{gap:0 30px}.timeline-item{grid-template-columns:100px 1fr;gap:15px}.prize-layout{gap:35px}.faq{gap:35px}.info-cell{padding:24px 15px}.info-value{font-size:20px}}
+    @media(max-width:640px){html{scroll-padding-top:116px}.wrap{width:calc(100% - 36px)}.nav{flex-direction:column;align-items:flex-start;gap:8px;padding:12px 0}.brand{font-size:12px}.brand-mark{font-size:25px}.nav-links{width:100%;justify-content:space-between;gap:8px;font-size:11px}.hero-inner{grid-template-columns:1fr;padding:42px 0 20px}.hero h1{font-size:clamp(39px,10vw,54px);margin:22px 0}.hero-sub{font-size:14px;max-width:320px}.court-art{width:88%;margin:0 auto;max-width:390px}.art-label{right:-6%}.hero-note{font-size:11px}.hero-strip{padding:17px 0}.strip-inner{font-size:9px;letter-spacing:1px}.strip-inner .strip-last{display:none}.event-info{grid-template-columns:1fr 1fr}.info-cell{padding:20px 12px;border-bottom:1px solid #cbc8bc}.info-cell:first-child{padding-left:12px}.info-cell:nth-child(2){border-right:0}.info-cell:nth-child(n+3){border-bottom:0}.info-value{font-size:22px}.info-small{font-size:11px}section.content{padding:55px 0}.section-head{display:block;margin-bottom:27px}.section-head p{margin-top:14px;font-size:13px}.stat{padding:20px 16px}.stat-num{font-size:62px}.stat-unit{margin-left:6px;font-size:12px}.stat h3{font-size:14px}.rule-grid{grid-template-columns:1fr;gap:25px;margin-top:30px}.rule p{font-size:13px}.notice{padding:15px 16px;font-size:13px}.scoring-layout{grid-template-columns:1fr;gap:30px}.score-formula{font-size:18px}.handicap{padding:22px}.timeline{grid-template-columns:1fr}.timeline-item{grid-template-columns:98px 1fr;padding:20px 0}.timeline-time{font-size:25px}.prize-layout{grid-template-columns:1fr;gap:32px}.pool-value{font-size:96px}.podium-item{padding:17px 12px}.podium-item strong{font-size:30px}.faq{grid-template-columns:1fr;gap:20px}.faq-intro h2{font-size:29px}.faq-list summary{font-size:14px}.contact-inner{align-items:flex-start;flex-direction:column;gap:20px}.contact{padding:40px 0}.contact h2{font-size:25px}.footer-inner{flex-direction:column;gap:8px}.eyebrow{font-size:10px;letter-spacing:1.3px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}.button:hover{transform:none}}
+    @media print{.topbar,.actions,.back-top,.court-art{display:none}.hero,.dark-section,.contact,.footer{background:white;color:black}.hero-inner{display:block;padding:20px 0}.hero h1{font-size:36px}.hero-sub,.contact p,.dark-section p{color:#444}.wrap{width:100%}section.content{padding:25px 0}.faq{display:block}details>p,details>ul{display:block!important}.stat,.handicap,.scoreboard{break-inside:avoid}.prize-section{background:#eee}.timeline,.scoring-layout{gap:25px}.section-head{margin-bottom:20px}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#overview">跳至活動資訊</a>
+  <header class="topbar">
+    <nav class="wrap nav" aria-label="主要導覽">
+      <a class="brand" href="#top" aria-label="活動首頁"><span class="brand-mark">3×3</span><span>輪換積分賽 / 活動指南</span></a>
+      <div class="nav-links"><a href="#overview">賽制</a><a href="#scoring">積分與讓分</a><a href="#schedule">流程</a><a href="#prizes">獎金</a><a href="#notes">須知</a></div>
+    </nav>
+  </header>
+  <main id="top">
+    <div class="hero">
+      <div class="wrap hero-inner">
+        <div>
+          <div class="eyebrow">GUOGUANG COURT / 30 PLAYERS / 3 ON 3</div>
+          <h1><span><span class="hero-title-number" style="display:inline">30</span>人三對三</span><span>籃球輪換</span><span class="accent">積分賽</span></h1>
+          <p class="hero-sub">隊友換一輪，默契再上線。<br>六場比賽，<strong>每一分都算數。</strong><br>這次不只拚一場勝負，而是拚六場的累積。</p>
+          <div class="actions"><a class="button" href="#overview">先看怎麼打 <span aria-hidden="true">↗</span></a><a class="button secondary" href="#schedule">查看活動流程 <span aria-hidden="true">↓</span></a></div>
+          <p class="hero-note">公司內部活動 · 已報名 30 位球員專用 · 日期待定<br>預計 13:00 報到 / 13:30 第一場開打</p>
         </div>
-    </div>  
-    <!-- ***** Preloader End ***** -->
-    
-    
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            .BREEZED
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#about">About</a></li>
-                            <li class="scroll-to-section"><a href="#projects">Projects</a></li>
-                            <li class="submenu">
-                                <a href="javascript:;">Drop Down</a>
-                                <ul>
-                                    <li><a href="">About Us</a></li>
-                                    <li><a href="">Features</a></li>
-                                    <li><a href="">FAQ's</a></li>
-                                    <li><a href="">Blog</a></li>
-                                </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="#contact-us">Contact Us</a></li> 
-                            <div class="search-icon">
-                                <a href="#search"><i class="fa fa-search"></i></a>
-                            </div>
-                        </ul>        
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
+        <div class="court-art">
+          <svg viewBox="0 0 520 520" role="img" aria-labelledby="court-title court-desc">
+            <title id="court-title">街頭籃球主視覺</title><desc id="court-desc">橘色籃球與半場線條，象徵三對三球員輪換。</desc>
+            <defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#34362e" stroke-width=".6"/></pattern><clipPath id="ball-clip"><circle cx="274" cy="245" r="143"/></clipPath></defs>
+            <rect x="24" y="25" width="466" height="458" fill="url(#grid)"/>
+            <g transform="rotate(-12 260 260)" fill="none" stroke="#777b64" stroke-width="1.5"><rect x="57" y="83" width="406" height="342"/><path d="M57 168Q260 435 463 168M183 83v115h154V83M183 198a77 77 0 0 0 154 0M230 104h60"/><circle cx="260" cy="124" r="15"/><path d="M57 352h406"/></g>
+            <circle cx="274" cy="245" r="165" stroke="#ff642a" stroke-width="1" stroke-dasharray="3 9" fill="none" opacity=".6"/>
+            <circle cx="274" cy="245" r="143" fill="#ff642a"/>
+            <g clip-path="url(#ball-clip)" fill="none" stroke="#151613" stroke-width="4"><path d="M131 245h286M274 102v286M167 130c169 44 169 187 0 233M380 130c-169 44-169 187 0 233" transform="rotate(-27 274 245)"/><path d="M139 190c80 29 181 122 244 159" opacity=".35"/></g>
+            <text x="67" y="426" fill="#f1eee6" font-family="Impact, Arial Black, sans-serif" font-size="76" letter-spacing="-4" transform="rotate(-12 67 426)">RUN IT BACK.</text>
+            <path d="M401 68h35m-17-17v35M85 320h22m-11-11v22" stroke="#ff642a" stroke-width="2"/>
+            <text x="67" y="71" fill="#a6a79e" font-family="Consolas, monospace" font-size="10" letter-spacing="2">ROTATE. COMPETE. REPEAT.</text>
+          </svg>
+          <span class="art-label" aria-hidden="true">SIX GAMES. EVERY POINT COUNTS.</span><span class="court-caption" aria-hidden="true">NO FIXED TEAMS.<br>JUST GOOD BASKETBALL.</span>
         </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
-    
-    <!-- ***** Search Area ***** -->
-    <div id="search">
-        <button type="button" class="close">×</button>
-        <form id="contact" action="#" method="get">
-            <fieldset>
-                <input type="search" name="q" placeholder="SEARCH KEYWORD(s)" aria-label="Search through site content">
-            </fieldset>
-            <fieldset>
-                <button type="submit" class="main-button">Search</button>
-            </fieldset>
-        </form>
+      </div>
+      <div class="hero-strip"><div class="wrap strip-inner"><span><strong>30</strong> PLAYERS</span><span><strong>6</strong> GAMES EACH</span><span><strong>2</strong> HALF COURTS</span><span class="strip-last">ONE COURT. NEW CONNECTIONS.</span></div></div>
     </div>
-
-    <!-- ***** Main Banner Area Start ***** -->
-    <div class="main-banner header-text" id="top">
-        <div class="Modern-Slider">
-          <!-- Item -->
-          <div class="item">
-            <div class="img-fill">
-                <img src="assets/images/slide-01.jpg" alt="">
-                <div class="text-content">
-                  <h3>Welcome To Breezed</h3>
-                  <h5>New Bootstrap Template</h5>
-                  <a href="#" class="main-stroked-button">Learn More</a>
-                  <a href="#" class="main-filled-button">Get It Now</a>
-                </div>
-            </div>
-          </div>
-          <!-- // Item -->
-          <!-- Item -->
-          <div class="item">
-            <div class="img-fill">
-                <img src="assets/images/slide-02.jpg" alt="">
-                <div class="text-content">
-                  <h3>Integrated Marketing Media</h3>
-                  <h5>Best Digital Marketing</h5>
-                  <a href="#" class="main-stroked-button">Read More</a>
-                  <a href="#" class="main-filled-button">Take Action</a>
-                </div>
-            </div>
-          </div>
-          <!-- // Item -->
-          <!-- Item -->
-          <div class="item">
-            <div class="img-fill">
-                <img src="assets/images/slide-03.jpg" alt="">
-                <div class="text-content">
-                  <h3>High Performance</h3>
-                  <h5>Robust and Speedy</h5>
-                  <a href="#" class="main-stroked-button">Learn More</a>
-                  <a href="#" class="main-filled-button">Get It Now</a>
-                </div>
-            </div>
-          </div>
-          <!-- // Item -->
-        </div>
+    <div class="wrap event-info" aria-label="活動基本資訊">
+      <div class="info-cell"><span class="label">活動日期 / DATE</span><span class="info-value">待定 <span class="status">待公告</span></span><span class="info-small">確認後另行通知球員</span></div>
+      <div class="info-cell"><span class="label">預計報到 / CHECK-IN</span><span class="info-value">13:00</span><span class="info-small">13:30 第一場比賽開始</span></div>
+      <div class="info-cell"><span class="label">比賽地點 / LOCATION</span><span class="info-value">國光中學</span><a class="info-small" href="https://maps.app.goo.gl/xPiBJcJ8sRvA3YJt7" target="_blank" rel="noopener noreferrer" aria-label="在 Google Maps 開啟國光中學位置（另開分頁）">查看球場位置 ↗</a></div>
+      <div class="info-cell"><span class="label">參賽費用 / ENTRY</span><span class="info-value">NT$ 100</span><span class="info-small">每人費用，全額進入獎金池</span></div>
     </div>
-    <div class="scroll-down scroll-to-section"><a href="#about"><i class="fa fa-arrow-down"></i></a></div>
-    <!-- ***** Main Banner Area End ***** -->
-
-    <!-- ***** About Area Starts ***** -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-xs-12">
-                    <div class="left-text-content">
-                        <div class="section-heading">
-                            <h6>About Us</h6>
-                            <h2>We work with top brands and startups</h2>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="service-item">
-                                    <img src="assets/images/service-item-01.png" alt="">
-                                    <h4>Top Notch</h4>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="service-item">
-                                    <img src="assets/images/service-item-01.png" alt="">
-                                    <h4>Robust</h4>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="service-item">
-                                    <img src="assets/images/contact-info-03.png" alt="">
-                                    <h4>Reliable</h4>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="service-item">
-                                    <img src="assets/images/contact-info-03.png" alt="">
-                                    <h4>Up-to-date</h4>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <a href="#" class="main-button-icon">
-                                    Learn More <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-xs-12">
-                    <div class="right-text-content">
-                        <p><a rel="nofollow noopener" href="https://templatemo.com/tm-543-breezed" target="_parent">Breezed HTML Template</a> is provided by TemplateMo for absolutely free of charge. You can download, edit and use this for your non-commercial and commercial websites. 
-                        <br><br>Redistributing this template as a downloadable ZIP file on any template collection website is strictly prohibited. You will need to talk to us if you want to redistribute this template. Thank you.
-                      <br><br>This is a Bootstrap v4.3.1 CSS layout. Do you like it? You can feel free to <a rel="nofollow noopener" href="https://templatemo.com/contact" target="_parent">talk to us</a> if you have anything.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="content wrap" id="overview" aria-labelledby="overview-title">
+      <div class="section-head"><div><div class="section-kicker"><b>01</b> THE FORMAT</div><h2 id="overview-title">不是固定隊伍，<br>是六場全新的組合。</h2></div><p>每場換隊友，整場拚累積。用賽前互評安排組合與相近對手，讓每個人都有六次上場的機會。</p></div>
+      <div class="stats">
+        <article class="stat"><div><span class="stat-num">30</span><span class="stat-unit">位球員</span></div><h3>每隊 3 人</h3><p>每輪 10 隊，兩個半場同步開打。</p></article>
+        <article class="stat"><div><span class="stat-num">6</span><span class="stat-unit">場／人</span></div><h3>六輪不重複隊友</h3><p>隊伍每場輪換，未上場時自行休息。</p></article>
+        <article class="stat"><div><span class="stat-num">6</span><span class="stat-unit">分鐘／場</span></div><h3>時間到才結束</h3><p>另留 2 分鐘記分與換場，不設延長賽。</p></article>
+        <article class="stat"><div><span class="stat-num">15</span><span class="stat-unit">波比賽</span></div><h3>總共 30 場</h3><p>每波兩場，正式賽程預計 120 分鐘。</p></article>
+      </div>
+      <div class="rule-grid">
+        <article class="rule"><span class="rule-num">RULE / 01</span><h3>先互評，再配隊</h3><p>賽前每人匿名把其他 29 人由強到弱排序，不評自己。收齊後彙整實力，安排隊伍與相近對手，不抽籤。</p></article>
+        <article class="rule"><span class="rule-num">RULE / 02</span><h3>像公園打球一樣</h3><p>犯規、球權、清球與爭議，由兩隊自行取得共識。各場統一<strong>2 分球算 1 分、3 分球算 2 分</strong>；工作人員只記分，不擔任裁判。</p></article>
+        <article class="rule"><span class="rule-num">RULE / 03</span><h3>每一分，打到時間到</h3><p>得分不設上限，不因達到任何分數提前結束。兩場都結束後再開始下一波，避免球員撞場。</p></article>
+      </div>
+      <div class="notice"><strong>賽前確認，開賽後不變更。</strong>名單、互評、配隊與讓分都在開賽前鎖定。活動統一使用 Excel 記錄名單、賽程與賽果，並以確認後的 Excel 紀錄為準。</div>
     </section>
-    <!-- ***** About Area Ends ***** -->
-
-    <!-- ***** Features Big Item Start ***** -->
-    <section class="section" id="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <img src="assets/images/features-icon-1.png" alt="">
-                        </div>
-                        <div class="features-content">
-                            <h4>Initial Work</h4>
-                            <p>Proin euismod sem ut diam ultricies, ut faucibus velit ultricies. Nam eu turpis quam. Duis ac condimentum eros.</p>
-                            <a href="#" class="text-button-icon">
-                                Learn More <i class="fa fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <img src="assets/images/features-icon-1.png" alt="">
-                        </div>
-                        <div class="features-content">
-                            <h4>Master Planning</h4>
-                            <p>Proin euismod sem ut diam ultricies, ut faucibus velit ultricies. Nam eu turpis quam. Duis ac condimentum eros.</p>
-                            <a href="#" class="text-button-icon">
-                                Learn More <i class="fa fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <img src="assets/images/features-icon-1.png" alt="">
-                        </div>
-                        <div class="features-content">
-                            <h4>Smooth Execution</h4>
-                            <p>Proin euismod sem ut diam ultricies, ut faucibus velit ultricies. Nam eu turpis quam. Duis ac condimentum eros.</p>
-                            <a href="#" class="text-button-icon">
-                                Learn More <i class="fa fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="content dark-section" id="scoring" aria-labelledby="scoring-title">
+      <div class="wrap">
+        <div class="section-head"><div><div class="section-kicker"><b>02</b> EVERY POINT COUNTS</div><h2 id="scoring-title">贏幾分，就加幾分。</h2></div><p>看的是全隊淨勝分，不是個人投籃得分。同隊三人取得相同積分，六場加總決定個人成績。</p></div>
+        <div class="scoring-layout">
+          <div><h3 class="scoring-title">個人積分，這樣算。</h3><div class="score-formula">本場積分 ＝ 己隊終場分 − 對手終場分<br><span>最終積分 ＝ 六場積分加總</span></div><p class="score-desc">贏分加分、輸分扣分、平手 0 分。賽前實力只用於配隊與讓分，<strong>不加進個人成績</strong>。</p>
+            <div class="scoreboard"><div class="board-label">EXAMPLE / 終場板上比分</div><div class="board-row"><span class="board-num">10</span><span class="board-divider">:</span><span class="board-num orange">11</span></div><p class="board-description">開場 0：2 → 終場 10：11<br>已包含讓分，不再額外加 2 分。</p><div class="outcome"><span>隊一每人 <strong>−1 分</strong></span><span>隊二每人 <strong>＋1 分</strong></span></div></div>
+          </div>
+          <div class="handicap"><h3>讓分在開場就加。</h3><p>弱隊依兩隊<strong>實力分總和的差距</strong>獲得讓分：差距 ÷ 0.5，四捨五入，範圍 0～6 分。</p><table><caption class="label" style="text-align:left;margin-bottom:12px;color:#a9ab9c">兩隊實力差與弱隊開場讓分</caption><thead><tr><th scope="col">兩隊實力差</th><th scope="col" style="text-align:right">開場讓分</th></tr></thead><tbody><tr><td>不足 0.25</td><td>0 分</td></tr><tr><td>0.25～不足 0.75</td><td>1 分</td></tr><tr><td>0.75～不足 1.25</td><td>2 分</td></tr><tr><td>1.25～不足 1.75</td><td>3 分</td></tr><tr><td>1.75～不足 2.25</td><td>4 分</td></tr><tr><td>2.25～不足 2.75</td><td>5 分</td></tr><tr><td>2.75 以上</td><td>6 分</td></tr></tbody></table><p class="small">6 分只是開場讓分上限，<strong>不是得分上限</strong>。設定賽前公告並鎖定，不在比賽途中更改。</p></div>
         </div>
+        <div class="notice dark-notice"><strong>記分前，兩隊一起確認。</strong>開場照讓分起分；終場直接記比分板上的分數，不再加一次讓分。雙方確認比分與狀態後，才計入成績。</div>
+      </div>
     </section>
-    <!-- ***** Features Big Item End ***** -->
-
-    <!-- ***** Features Big Item Start ***** -->
-    <section class="section" id="subscribe">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="section-heading">
-                        <h6>Subscribe Newsletters</h6>
-                        <h2>Don’t miss this chance!</h2>
-                    </div>
-                    <div class="subscribe-content">
-                        <p>Vivamus suscipit blandit nibh, in cursus mi. Proin vel blandit metus, et auctor elit. Vivamus tincidunt tristique convallis. Ut nec odio vel arcu euismod semper nec ac sem.</p>
-                        <div class="subscribe-form">
-                            <form id="subscribe-now" action="" method="get">
-                                <div class="row">
-                                    <div class="col-md-8 col-sm-12">
-                                      <fieldset>
-                                        <input name="email" type="text" id="email" placeholder="Enter your email..." required="">
-                                      </fieldset>
-                                    </div>
-                                    <div class="col-md-4 col-sm-12">
-                                      <fieldset>
-                                        <button type="submit" id="form-submit" class="main-button">Subscribe Now</button>
-                                      </fieldset>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="content wrap" id="schedule" aria-labelledby="schedule-title">
+      <div class="section-head"><div><div class="section-kicker"><b>03</b> GAME DAY FLOW</div><h2 id="schedule-title">先就位，再開打。</h2></div><p>活動日期待定，以下為預計時間。<strong>13:00 報到、13:30 第一場開打</strong>，請利用開賽前 30 分鐘完成報到、賽程確認與暖身。</p></div>
+      <div class="timeline">
+        <article class="timeline-item"><div class="timeline-time">13:00<span>至 13:15 / 預計</span></div><div><h3>報到、收費</h3><p>確認參賽狀態，每人 100 元進入獎金池。</p></div></article>
+        <article class="timeline-item"><div class="timeline-time">13:15<span>至 13:30 / 預計</span></div><div><h3>確認賽程、暖身</h3><p>確認隊員、場地與開場讓分，準備第一波比賽。</p></div></article>
+        <article class="timeline-item game"><div class="timeline-time">13:30<span>至 15:30 / 預計</span></div><div><h3>15 波雙場比賽</h3><p>每波 6 分鐘比賽＋2 分鐘記分換場。兩場都結束後，下一波再開始。</p></div></article>
+        <article class="timeline-item"><div class="timeline-time">15:30<span>至 15:40 / 預計</span></div><div><h3>核分、公布排名</h3><p>核對所有賽果與獲獎資格，雙方確認結果。</p></div></article>
+        <article class="timeline-item"><div class="timeline-time">15:40<span>至 15:50 / 預計</span></div><div><h3>發獎金、合照</h3><p>完成確認後發獎，留下這次一起打球的紀錄。</p></div></article>
+        <article class="timeline-item"><div class="timeline-time">15:50<span>至 16:00 / 預計</span></div><div><h3>清場、離場</h3><p>收拾器材與個人物品，一起維持球場整潔。</p></div></article>
+      </div>
+      <p class="timeline-foot">預計 16:00 離場，活動共 3 小時，距四小時上限有 60 分鐘延誤空間；無延誤不必等待。以 13:00 活動開始計，最晚 16:40 結束比賽、17:00 離場。安全優先，不為趕時間虛填結果。</p>
     </section>
-    <!-- ***** Features Big Item End ***** -->
-
-
-    <!-- ***** Projects Area Starts ***** -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="section-heading">
-                    <h6>Our Projects</h6>
-                    <h2>Some of our latest projects</h2>
-                </div>
-                <div class="filters">
-                    <ul>
-                        <li class="active" data-filter="*">All</li>
-                        <li data-filter=".des">Web Design</li>
-                        <li data-filter=".dev">Web Development</li>
-                        <li data-filter=".gra">Graphics</li>
-                        <li data-filter=".tsh">Artworks</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-9">
-                <div class="filters-content">
-                    <div class="row grid">
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all des">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-01.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/images/project-item-01.jpg" alt=""></a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all dev">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-02.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/images/project-item-02.jpg" alt=""></a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all gra">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-03.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/images/project-item-03.jpg" alt=""></a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all tsh">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-04.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/images/project-item-04.jpg" alt=""></a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all dev">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-05.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/images/project-item-05.jpg" alt=""></a>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 all des">
-                          <div class="item">
-                            <a href="assets/images/project-big-item-06.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="assets/images/project-item-06.jpg" alt=""></a>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="content dark-section prize-section" id="prizes" aria-labelledby="prizes-title">
+      <div class="wrap"><div class="section-head"><div><div class="section-kicker"><b>04</b> THE PRIZE POOL</div><h2 id="prizes-title">前三名，一起分獎金。</h2></div><p>每人 100 元 × 30 人，全額作為獎金。場租等費用另計；獎金依實收金額結算。</p></div>
+        <div class="prize-layout"><div><div class="pool"><span class="label">30 人全數繳費時 / TOTAL POOL</span><div class="pool-value">3,000 <span>NT$</span></div></div><div class="podium"><div class="podium-item"><span>01 / 第一名</span><strong>1,000</strong><small>NT$</small></div><div class="podium-item"><span>02 / 第二名</span><strong>1,000</strong><small>NT$</small></div><div class="podium-item"><span>03 / 第三名</span><strong>1,000</strong><small>NT$</small></div></div><p class="prize-note">以上為獎金池 3,000 元且無並列時的分配；實收不足時，以實收獎金池計算。</p></div>
+          <div><ol class="rank-list" aria-label="排名比較順序"><li><span>01</span>累積淨勝分</li><li><span>02</span>勝場數</li><li><span>03</span>六場對手實力總和</li></ol><div class="rank-detail"><p>依序比較，仍相同則<strong>並列</strong>，不抽籤、不臨時加賽。必須完成六場且未退出，才具獲獎資格。</p><p><strong>並列者平分占用前三名的獎金：</strong>兩人並列第三，各得 500 元；四人並列第一，各得 750 元。超過第三名不另增加獎金。</p><p>不能整元均分的尾數，依同名次 P 編號由小到大，各加 1 元分完；不改變名次。</p></div></div>
         </div>
       </div>
     </section>
-    <!-- ***** Projects Area Ends ***** -->
-
-    <!-- ***** Testimonials Starts ***** -->
-    <section class="section" id="testimonials">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-heading">
-                        <h6>Digital Team</h6>
-                        <h2>young and talented members</h2>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 mobile-bottom-fix-big" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-01.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.01 White Cheese</h4>
-                            <span>Digital Marketer</span>
-                        </div>
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-04.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.02 Snow Mary</h4>
-                            <span>Site Analyst</span>
-                        </div>
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-02.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.03 Johnny Egg</h4>
-                            <span>Digital Influencer</span>
-                        </div>
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-05.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.04 Catherine Phyu</h4>
-                            <span>Co Founder</span>
-                        </div>
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-03.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.05 Shao Lynn</h4>
-                            <span>Chief Marketing</span>
-                        </div>
-                        
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-04.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.06 Emma Honey</h4>
-                            <span>Digital Influencer</span>
-                        </div>
-                        
-                        <div class="item author-item">
-                            <div class="member-thumb">
-                                <img src="assets/images/member-item-06.jpg" alt="">
-                                <div class="hover-effect">
-                                    <div class="hover-content">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <h4>.07 Oliva Sofie</h4>
-                            <span>Website Analyst</span>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
+    <section class="content wrap" id="notes" aria-labelledby="notes-title">
+      <div class="faq"><div class="faq-intro"><div class="section-kicker"><b>05</b> BEFORE YOU HIT THE COURT</div><h2 id="notes-title">打得盡興，<br>也要安全回家。</h2><p>把這幾件事先看完，現場就能把時間留給打球。有不確定的地方，請聯絡 Jianlin Wang。</p><div class="checklist" aria-label="球員行前提醒"><span>飲水</span><span>運動服裝</span><span>合適球鞋</span><span>報名費 100 元</span></div></div>
+        <div class="faq-list">
+          <details open><summary>如果受傷、不舒服或缺席怎麼辦？</summary><p>身體不適立即停下，不勉強出賽。傷退或缺席不能找人頂替，也不能轉移積分；無法正常完成的比賽須註明，不得虛填比分。</p><p>單方棄賽記行政積分 −3／＋3，雙方棄賽記 0。棄賽不算正常完成場次；必要時在活動時間內補賽。須完成六場且未退出，才有獲獎資格。</p></details>
+          <details><summary>平手、爭議與比賽時間怎麼處理？</summary><p>每場固定 6 分鐘，時間到即結束，不設延長賽；平手個人積分為 0。犯規、球權、清球與爭議由兩隊取得共識，記分者不擔任裁判。開場確認比分、計時與規則，終場共同確認結果。</p></details>
+          <details><summary>休息的球員需要協助什麼？</summary><p>未上場時自行休息，不設全員固定休息。每場地安排一位記分者，可由未上場球員輪值。球員自行處理計時、下一場就位與換背心；兩場都結束後再開始下一波。</p></details>
+          <details><summary>如果活動中止，獎金怎麼辦？</summary><p>所有賽果確認後才發獎。活動中止或具資格者不足三人，停止發獎並退回已收費用，或經大家同意再安排補賽。</p></details>
+          <details><summary>球員編號、賽程與個人名次在哪裡看？</summary><p>由工作人員統一使用 Excel 記錄與核對，請向現場工作人員查詢球員編號、賽程與個人名次。P 編號是依賽前互評實力由強到弱編成的球員編號，不是報名順序，也不是賽後名次；實力相同時原報名序號較小者在前。</p></details>
+          <details><summary>現場需要準備哪些器材？</summary><p>活動備妥比賽球、可辨識隊伍的背心、比分板、計時器、飲水及基本急救用品。球員請準備合適運動服裝與球鞋、飲水，並留意自己的身體狀況。</p></details>
         </div>
+      </div>
     </section>
-    <!-- ***** Testimonials Ends ***** -->
-    
-    <!-- ***** Contact Us Area Starts ***** -->
-    <section class="section" id="contact-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-xs-12">
-                    <div class="left-text-content">
-                        <div class="section-heading">
-                            <h6>Contact Us</h6>
-                            <h2>Feel free to keep in touch with us!</h2>
-                        </div>
-                        <ul class="contact-info">
-                            <li><img src="assets/images/contact-info-01.png" alt="">010-020-0860</li>
-                            <li><img src="assets/images/contact-info-02.png" alt="">info@company.com</li>
-                            <li><img src="assets/images/contact-info-03.png" alt="">www.company.com</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-8 col-xs-12">
-                    <div class="contact-form">
-                        <form id="contact" action="" method="get">
-                          <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="name" type="text" id="name" placeholder="Your Name *" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="phone" type="text" id="phone" placeholder="Your Phone" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="email" type="email" id="email" placeholder="Your Email *" required="">
-                              </fieldset>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                              <fieldset>
-                                <input name="subject" type="text" id="subject" placeholder="Subject">
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <textarea name="message" rows="6" id="message" placeholder="Message" required=""></textarea>
-                              </fieldset>
-                            </div>
-                            <div class="col-lg-12">
-                              <fieldset>
-                                <button type="submit" id="form-submit" class="main-button-icon">Send Message Now <i class="fa fa-arrow-right"></i></button>
-                              </fieldset>
-                            </div>
-                          </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Contact Us Area Ends ***** -->
-    
-    <!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xs-12">
-                    <div class="left-text-content">
-                        <p>Copyright &copy; 2020 Breezed Co., Ltd. 
-                        
-                        - Design: <a rel="nofollow noopener" href="https://templatemo.com">TemplateMo</a></p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xs-12">
-                    <div class="right-text-content">
-                            <ul class="social-icons">
-                                <li><p>Follow Us</p></li>
-                                <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a></li>
-                                <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-twitter"></i></a></li>
-                                <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a rel="nofollow" href="https://fb.com/templatemo"><i class="fa fa-dribbble"></i></a></li>
-                            </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Plugins -->
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    <script src="assets/js/slick.js"></script> 
-    <script src="assets/js/lightbox.js"></script> 
-    <script src="assets/js/isotope.js"></script> 
-    
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
-
-    <script>
-
-        $(function() {
-            var selectedClass = "";
-            $("p").click(function(){
-            selectedClass = $(this).attr("data-rel");
-            $("#portfolio").fadeTo(50, 0.1);
-                $("#portfolio div").not("."+selectedClass).fadeOut();
-            setTimeout(function() {
-              $("."+selectedClass).fadeIn();
-              $("#portfolio").fadeTo(50, 1);
-            }, 500);
-                
-            });
-        });
-
-    </script>
-
-  </body>
+    <section class="contact" aria-labelledby="contact-title"><div class="wrap contact-inner"><div><div class="section-kicker">SEE YOU ON THE COURT.</div><h2 id="contact-title">有問題，先找我們聊聊。</h2><p>公司內部活動；日期確認或預計時程調整後另行通知。</p></div><div><span class="label" style="color:#a6a79e">聯絡方式 / CONTACT</span><span class="contact-name">請聯絡 Jianlin Wang</span></div></div></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><span>30人三對三籃球輪換積分賽 / 國光中學</span><a class="back-top" href="#top">BACK TO TOP ↑</a></div></footer>
+</body>
 </html>
